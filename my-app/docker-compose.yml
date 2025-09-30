@@ -1,8 +1,8 @@
-version: '3.8'
+version: '3.9'
 services:
   backend:
     build: ./backend
-    conatiner_name: backend
+    container_name: backend
     ports:
       - "5000:5000"
     networks:
@@ -10,7 +10,7 @@ services:
 
   frontend:
     build: ./frontend
-    conatiner_name: frontend
+    container_name: frontend
     ports:
       - "3000:80"
     depends_on:
